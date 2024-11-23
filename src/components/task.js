@@ -64,7 +64,7 @@ const TaskManager = () => {
         value={newTask.description}
         onChange={(e) => setNewTask({ ...newTask, description: e.target.value })}
       />
-      <Button onClick={createTask}>Add Task</Button>
+      <Button onClick={createTask} onTouch={createTask} >Add Task</Button>
       
       <ul>
         {tasks.map((task) => (
